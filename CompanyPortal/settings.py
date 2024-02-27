@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'Employee',
-    'drf_spectacular' #For Swagger
+    'drf_spectacular', #For Swagger
+    'user',
 ]
 
 MIDDLEWARE = [

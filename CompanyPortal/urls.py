@@ -25,7 +25,7 @@ from django.urls import re_path as url, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    #For Swagger
+    #For Swagger setup
     path('api/schema/',SpectacularAPIView.as_view(), name='api-schema'),
     path(
         'api/docs/',
@@ -33,4 +33,5 @@ urlpatterns = [
         name='api-docs',
     ),
     url(r'^', include('Employee.urls')),
+    path('api/user/', include('user.urls')),
 ]
